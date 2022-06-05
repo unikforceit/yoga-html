@@ -32,6 +32,10 @@ body{
     flex: 0 0 75%;
     max-width: 75%;
 }
+.col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .main-header{
     height: 120px;
     line-height: 120px;
@@ -77,6 +81,62 @@ body{
                 font-weight: 700;
                 text-transform: capitalize;
             }
+        }
+    }
+}
+.form-area{
+    padding: 100px 0;
+}
+.form-field{
+    margin-bottom: 30px;
+    margin-right: 60px;
+    label{
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    input{
+        line-height: 40px;
+        padding: 0 10px;
+        outline: none;
+        width: 100%;
+        border: 1px solid #1157ce;
+        &:focus{
+            border-color: #96fd0f;
+        }
+    }
+    textarea{
+        outline: none;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #1157ce;
+        &:focus{
+            border-color: #96fd0f;
+        }
+    }
+    select{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #1157ce;
+        outline: none;
+    }
+    &.textarea{
+        text-align: center;
+    }
+    button[type="submit"]{
+        border: none;
+        outline: none;
+        width: 180px;
+        line-height: 50px;
+        background-color: #1157ce;
+        border-radius: 5px;
+        color: #fff;
+        margin-top: 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: #96fd0f;
         }
     }
 }
